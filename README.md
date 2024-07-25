@@ -1,2 +1,2 @@
-# flink-sql-bridge
+# Flink SQL Bridge
 Flink SQL Bridge
