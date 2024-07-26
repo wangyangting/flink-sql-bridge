@@ -1,2 +1,2 @@
-# Flink SQL Bridge
-Flink SQL Bridge
+# Flink SQL Job Bridge
+Flink SQL Job Bridge
