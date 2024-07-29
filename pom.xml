@@ -22,6 +22,7 @@
         <oracle-ojdbc.version>19.3.0.0</oracle-ojdbc.version>
         <oracle-database-xml.version>19.3.0.0</oracle-database-xml.version>
         <oracle-database-jdbc.version>21.8.0.0</oracle-database-jdbc.version>
+        <sqlserver-jdbc.version>12.6.3.jre11</sqlserver-jdbc.version>
         <commons-cli.version>1.8.0</commons-cli.version>
         <slf4j.version>2.0.7</slf4j.version>
         <logback.version>1.2.3</logback.version>
@@ -67,28 +68,58 @@
         </dependency>
 
         <!-- Flink Connector jdbc -->
-        <!--<dependency>
+        <dependency>
             <groupId>org.apache.flink</groupId>
             <artifactId>flink-connector-jdbc</artifactId>
-        </dependency>-->
+        </dependency>
 
         <!-- Mysql Connector -->
-        <!--<dependency>
+        <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-        </dependency>-->
+        </dependency>
 
         <!-- Flink Connector StarRocks -->
-        <!--<dependency>
+        <dependency>
             <groupId>com.starrocks</groupId>
             <artifactId>flink-connector-starrocks</artifactId>
-        </dependency>-->
+        </dependency>
 
         <!-- Flink Connector mysql-cdc -->
-        <!--<dependency>
+        <dependency>
             <groupId>org.apache.flink</groupId>
             <artifactId>flink-connector-mysql-cdc</artifactId>
-        </dependency>-->
+        </dependency>
+
+        <!-- Flink connector oracle-cdc -->
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-connector-oracle-cdc</artifactId>
+        </dependency>
+
+        <!-- Oracle ojdbc -->
+        <dependency>
+            <groupId>com.oracle.ojdbc</groupId>
+            <artifactId>ojdbc8</artifactId>
+        </dependency>
+
+        <!-- Oracle database xml -->
+        <dependency>
+            <groupId>com.oracle.database.xml</groupId>
+            <artifactId>xdb</artifactId>
+        </dependency>
+
+        <!-- Oracle database jdbc -->
+        <dependency>
+            <groupId>com.oracle.database.jdbc</groupId>
+            <artifactId>ojdbc8</artifactId>
+        </dependency>
+
+        <!-- SqlServer jdbc-->
+        <dependency>
+            <groupId>com.microsoft.sqlserver</groupId>
+            <artifactId>mssql-jdbc</artifactId>
+        </dependency>
 
         <!-- Apache commons-cli -->
         <dependency>
@@ -122,12 +153,6 @@
             <dependency>
                 <groupId>org.apache.flink</groupId>
                 <artifactId>flink-streaming-java</artifactId>
-                <version>${flink.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.apache.flink</groupId>
-                <artifactId>flink-streaming-scala_${scala.binary.version}</artifactId>
                 <version>${flink.version}</version>
             </dependency>
 
@@ -209,6 +234,13 @@
                 <groupId>com.oracle.database.jdbc</groupId>
                 <artifactId>ojdbc8</artifactId>
                 <version>${oracle-database-jdbc.version}</version>
+            </dependency>
+
+            <!-- SqlServer jdbc -->
+            <dependency>
+                <groupId>com.microsoft.sqlserver</groupId>
+                <artifactId>mssql-jdbc</artifactId>
+                <version>${sqlserver-jdbc.version}</version>
             </dependency>
 
             <!-- Apache commons-cli -->

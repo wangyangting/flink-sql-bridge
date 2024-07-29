@@ -82,8 +82,6 @@ public class FlinkEnvironment {
 
         if (commandLine.hasOption("v")) {
             System.out.println("pipeline.name: " + name);
-            System.out.println();
-            System.out.println();
         }
 
         return tableEnv;
